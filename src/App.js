@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App=()=> {
+   const handleClick = () => {
+    alert("Click");
+  };
+       return (
+    <div>
+      <h1>Hola mundo</h1>
+      <h2>Mi</h2>
+      <h2>Primer</h2>
+      <h2>Proyecto</h2>
+      <h2>React</h2>
+      <ul>
+        <li>Manzana</li>
+        <li>Perá</li>
+        <li>Uva</li>
+      </ul>
+      <button onClick={handleClick}>Click me</button>
     </div>
   );
 }
