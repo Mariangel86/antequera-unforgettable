@@ -1,0 +1,17 @@
+nav {
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+    color: blueviolet;
+    font-size:large;
+    background-color: silver;
+}
+
+nav ul li{
+    float: left;
+    margin: 10px;
+}
+
+img {
+    width: 20%;
+}

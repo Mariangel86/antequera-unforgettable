@@ -1,4 +1,5 @@
 import './App.css';
+import NavBar from './Componentes/Navbar';
 
 const App=()=> {
    const handleClick = () => {
@@ -6,6 +7,7 @@ const App=()=> {
   };
        return (
     <div>
+      <NavBar/>
       <h1>Hola mundo</h1>
       <h2>Mi</h2>
       <h2>Primer</h2>
