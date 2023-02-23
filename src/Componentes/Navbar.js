@@ -7,11 +7,13 @@ const NavBar = () => {
 
 <nav>
     <img src= {LogoSoft} alt='Logo'/>
+     <h1>Menu</h1> 
+     
+     <button className="button1">Carrito</button>
 
-        <h1>Soft Angels</h1>
-        
-
-     <h1>Menu</h1>
+        <button className="button2">
+            Inicia Sesion
+        </button>
 
         <ul>
             <li>
@@ -26,11 +28,7 @@ const NavBar = () => {
            
          </ul>
 
-         <button>Carrito</button>
-
-        <button>
-            Inicia Sesion
-        </button>
+        
 
         </nav>
     )

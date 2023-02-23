@@ -6,13 +6,10 @@ const App=()=> {
     alert("Click");
   };
        return (
-    <div>
+    <div className="div">
       <NavBar/>
-      <h1>Hola mundo</h1>
-      <h2>Mi</h2>
-      <h2>Primer</h2>
-      <h2>Proyecto</h2>
-      <h2>React</h2>
+      <h3>Hola mundo</h3>
+      <h2>Mi Proyecto React</h2>
       <ul>
         <li>Manzana</li>
         <li>Perá</li>
