@@ -7,7 +7,7 @@ const App=()=> {
   };
        return (
     <div className="div">
-      <NavBar number={0}/>
+      <NavBar/>
       <h3>Hola mundo</h3>
       <h2>Mi Proyecto React</h2>
       <ul>

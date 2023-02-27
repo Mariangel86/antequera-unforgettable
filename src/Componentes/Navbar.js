@@ -1,7 +1,9 @@
 import React from "react";
 import LogoSoft from './assets/LogoSoft.png';
 import './Navbar.css';
-const NavBar = ({number}) => {
+import CartWidget from './CartWidget'
+
+const NavBar = () => {
 
     return (
 
@@ -10,7 +12,7 @@ const NavBar = ({number}) => {
      <h1>Menu</h1> 
      <h4>Contact us</h4>
      
-     <button className="button1">{number} Carrito</button>
+     <CartWidget />
 
         <button className="button2">
             Inicia Sesion
