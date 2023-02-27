@@ -1,7 +1,7 @@
 import React from "react";
 import LogoSoft from './assets/LogoSoft.png';
 import './Navbar.css';
-import CartWidget from './CartWidget'
+import CartWidget from './CartWidget';
 
 const NavBar = () => {
 
