@@ -27,10 +27,15 @@ h1{
     position: absolute;
     margin-left: 600px;
 }
+h4{
+    font-size: 2cm;
+    position: absolute;
+    margin-left: 900px;
+}
 
 .button1{
     position: absolute;
-    margin-left: 80rem;
+    margin-left: 95rem;
 }
 
 .button2{
