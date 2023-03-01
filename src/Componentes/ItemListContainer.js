@@ -1,6 +1,7 @@
 import React from 'react';
 import Titulo from './Titulo';
 import './ItemListContainer.css'
+import ContadorFuncional from './Contador';
 
 const ItemListContainer = (props) => {
     
@@ -19,6 +20,7 @@ const ItemListContainer = (props) => {
         <li>Uva</li>
       </ul>
       <button className='button1' onClick={handleClick}>Click me</button>
+      <ContadorFuncional/>
       </div>
   )
 }
