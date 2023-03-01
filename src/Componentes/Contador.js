@@ -1,6 +1,5 @@
-import React, {useState} from 'react'
-import styles from'./ContadorFuncional.module.css';
-import Boton from './../elementos/Boton';
+import React, {useState, useEffect} from 'react'
+
 
 const ContadorFuncional = (props) => {
     const [cuenta, CambiarCuenta ] = useState (0);
