@@ -6,6 +6,10 @@ const ContadorFuncional = (props) => {
     const incrementar = (cantidad) =>CambiarCuenta(cuenta + cantidad);
     const disminuir = (cantidad) => CambiarCuenta(cuenta - cantidad);
 
+    useEffect (()=> {
+        
+    },[])
+
 return (
 <div>
     <h1>Contador: {cuenta}</h1>
