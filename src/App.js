@@ -1,7 +1,6 @@
 import './App.css';
 import ItemListContainer from './Componentes/ItemListContainer';
 import NavBar from './Componentes/Navbar';
-import ContadorFuncional from './Componentes/Contador';
 
 const App=()=> {
    
@@ -9,7 +8,6 @@ const App=()=> {
     <div className="div">
       <NavBar/>
       <ItemListContainer text='Lista de productos'/>
-      <ContadorFuncional cantidadAincrementar={1} cantidadAdisminuir= {1}/>
       
     </div>
   );
