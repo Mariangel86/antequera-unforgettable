@@ -4,12 +4,15 @@ import './ItemListContainer.css'
 import ContadorFuncional from './Contador';
 
 const ItemListContainer = (props) => {
-  const [productos, CambiarOrdenProductos ] = useState ([]);
+  const [productos, cambiarProductos ] = useState ([]);
 
-  useEffect(() => {
-    
-  
-},[]);
+  const establecerProductos = async()=> {
+    try {
+    const results = await fetch ("/home/mariangelconcepcion53/antequera-unforgettable/src/Componentes/productos.json")
+    const data= await results.json();
+    cambiarProductos(data);
+  }catch (error) {console.log(error);
+  }}
     
     const handleClick = () => {
         alert("Click");
