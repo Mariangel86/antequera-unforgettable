@@ -1,0 +1,28 @@
+[
+    {"name": "Juan ",
+"LastName": "Roble",
+"email":"juanchoroble@gm,ail.com",
+"celular": "3001234567"
+},
+
+{
+    "name": "Ana ",
+"LastName": "Martinez",
+"email":"AnaM@gmail.com",
+"celular": "3007654321"
+},
+
+{
+"name": "Mirian ",
+"LastName": "Medina",
+"email":"MirianMed@gmail.com",
+"celular": "3003217654"
+},
+
+{
+    "name": "Francisco",
+    "LastName": "Perez",
+    "email": "Fperez@gmail.com",
+    "celular":"3007654123"
+}
+]
