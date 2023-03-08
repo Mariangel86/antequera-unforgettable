@@ -24,7 +24,7 @@ const ItemListContainer = (props) => {
 
   return (
   <div>
-    <ItemList/>
+    <ItemList productos={productos}/>
     <Titulo greeting={props.text}/>
 
     <ul>
