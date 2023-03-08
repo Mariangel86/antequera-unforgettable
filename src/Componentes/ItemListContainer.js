@@ -13,6 +13,9 @@ const ItemListContainer = (props) => {
     cambiarProductos(data);
   }catch (error) {console.log(error);
   }}
+  useEffect(()=>{
+    establecerProductos();
+  },[])
     
     const handleClick = () => {
         alert("Click");
