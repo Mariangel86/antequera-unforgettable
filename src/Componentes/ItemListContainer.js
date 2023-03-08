@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Titulo from './Titulo';
 import './ItemListContainer.css'
 import ContadorFuncional from './Contador';
+import ItemList from './ItemList';
 
 const ItemListContainer = (props) => {
   const [productos, cambiarProductos ] = useState ([]);
@@ -23,7 +24,7 @@ const ItemListContainer = (props) => {
 
   return (
   <div>
-  
+    <ItemList/>
     <Titulo greeting={props.text}/>
 
     <ul>

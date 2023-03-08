@@ -2,7 +2,7 @@ import React from 'react'
 
 const ItemList = () => {
   return (
-    <div>ItemList</div>
+    <div>I{productos.map((producto) => (<h2>{producto.name}</h2>))}</div>
   )
 }
 
