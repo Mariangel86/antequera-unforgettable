@@ -9,7 +9,7 @@ const ItemListContainer = (props) => {
 
   const establecerProductos = async()=> {
     try {
-    const results = await fetch ("https://public/productos.json")
+    const results = await fetch ("./productos.json")
     const data= await results.json();
     cambiarProductos(data);
   }catch (error) {console.log(error);
