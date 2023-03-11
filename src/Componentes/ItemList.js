@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import ItemDetalle from './ItemDetalle';
 
-const ItemList = ({productos}) => {
+const ItemList = ({productos=[]}) => {
   return (
-    <div>I{productos.map((producto) => (<h2>{producto.name}</h2>))}</div>
-  )
+    productos.map(producto => <ItemDetalle key={producto.id} productoDetalle={producto}/>)
+  );
 }
 
 export default ItemList;
