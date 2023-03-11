@@ -15,21 +15,8 @@ const ItemDetalleContenedor= () => {
     
     useEffect(()=>{
       establecerProductos();
-    },[]);
+    },[])
 
-
-
-    useEffect(()=>{
-        let tiempo;
-        if(productos=== true){
-            tiempo=setTimeout (()=>{
-                cambiarProductos(false);
-            },2000);
-
-        }return (()=>clearTimeout(tiempo));
-    },[productos,cambiarProductos]);
-
-    
     return(
     <ItemDetalle productos={productos}/>
     );

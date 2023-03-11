@@ -1,12 +1,6 @@
 ul li{
-    float:left;
+    float:right;
     margin: 220px;
     right: 500px;
     align-content: center;
-}
-
-.button1{
-   position: relative;
-   margin-top:30em;
-   right: 100px;
 }

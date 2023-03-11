@@ -7,7 +7,7 @@ const ContadorFuncional = (props) => {
 
 return (
 <div>
-    <h1>Contador: {cuenta}</h1>
+    <h2>Contador: {cuenta}</h2>
 
 <button
 onClick={() => incrementar (props.cantidadAincrementar)}>

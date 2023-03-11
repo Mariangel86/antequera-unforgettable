@@ -24,16 +24,10 @@ const ItemListContainer = (props) => {
 
   return (
   <div>
-    <ItemList productos={productos}/>
     <Titulo greeting={props.text}/>
-
-    <ul>
-        <li>Manzana</li>
-        <li>Perá</li>
-        <li>Uva</li>
-      </ul>
-      <button className='button1' onClick={handleClick}>Click me</button>
+      <ItemList productos={productos}/>
       <ContadorFuncional cantidadAincrementar={1} cantidadAdisminuir= {1}/>
+      <button onClick={handleClick}>Click me</button>
       </div>
   )
 }

@@ -1,7 +1,8 @@
 import React from "react";
 import LogoSoft from './assets/LogoSoft.png';
-import './Navbar.css';
+import './Navbar.module.css';
 import CartWidget from './CartWidget';
+import styled from "styled-components";
 
 const NavBar = () => {
 
@@ -10,13 +11,13 @@ const NavBar = () => {
 <nav>
     <img src= {LogoSoft} alt='Logo'/>
      <h1>Menu</h1> 
-     <h4>Contact us</h4>
+     <h3>Contact us</h3>
      
      <CartWidget />
 
-        <button className="button2">
+        <BotonInicio>
             Inicia Sesion
-        </button>
+        </BotonInicio>
 
         <ul>
             <li>
@@ -36,4 +37,6 @@ const NavBar = () => {
         </nav>
     )
 }
+const BotonInicio = styled.button`
+margin-left:60rem`
 export default NavBar;

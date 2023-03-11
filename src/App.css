@@ -1,21 +1,11 @@
 .div{
-  height: 120vh;
+  display:grid;
   background-color: black;
   color: blueviolet;
   
 }
-h3{
-  font-size: x-large;
-  justify-content: left;
-  margin:30px;
-}
-
-h2{
-  margin: 30px;
-}
 
 button{
-  margin: 30px;
   background-color: turquoise;
   border-radius: 30px;
 }
