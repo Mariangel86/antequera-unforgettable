@@ -36,5 +36,53 @@
     "celular":"3007654123",
     "price": "90",
     "image":"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-}
+},
+{   "id":"5",
+    "name": "Lupita",
+    "LastName": "fuente",
+    "email": "FLupe@gmail.com",
+    "celular":"3027654123",
+    "price": "93",
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjLbaR-s1oOO1RzKfoZZK3f9gXwrxMLT9vHg&usqp=CAU"
+},
+{   "id":"6",
+"name": "Carolina",
+"LastName": "Rodriguez",
+"email": "CarRodriguez@gmail.com",
+"celular":"3017654123",
+"price": "56",
+"image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl31zWzUqvvDyOPeX6y1Z_sSYlpIC-3t8uVw&usqp=CAU"
+},
+{   "id":"7",
+"name": "Rodrigo",
+"LastName": "Garcia",
+"email": "Garcia54@gmail.com",
+"celular":"3077654123",
+"price": "69",
+"image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzaMqZ-aQMaF4eYyJ7ajtJ0QG1jQf6RrXXQw&usqp=CAU"
+},
+{   "id":"8",
+    "name": "martha",
+    "LastName": "tamayo",
+    "email": "tamayomartha@gmail.com",
+    "celular":"3037654123",
+    "price": "72",
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRztNiEd63SvTXMXe-2Llo9Lcp1mWHtSUJhPg&usqp=CAU"
+},
+{   "id":"9",
+    "name": "Milena",
+    "LastName": "osteicochea",
+    "email": "Osteicocheml@gmail.com",
+    "celular":"3087654123",
+    "price": "250",
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBUZVjWpH9gUykSjPmxQehYXniQxn4qlhMvw&usqp=CAU"
+},
+{   "id":"10",
+    "name": "Josefina",
+    "LastName": "Carvajal",
+    "email": "JosefaCarvajal@gmail.com",
+    "celular":"3057654123",
+    "price": "54",
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQylP8KRgsFnOo12f86UsM3h06OD9jxl18LNg&usqp=CAU"
+} 
 ]

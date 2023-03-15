@@ -1,5 +1,6 @@
 import React, {useState,useEffect} from "react";
-import ItemDetalle from "./ItemDetalle";
+import Item from "./Item.js";
+import ItemDetail from "./ItemDetail.js";
 
 const ItemDetalleContenedor= () => {
     const [productos, cambiarProductos ] = useState ([]);
@@ -18,7 +19,7 @@ const ItemDetalleContenedor= () => {
     },[])
 
     return(
-    <ItemDetalle productos={productos}/>
+    <ItemDetail productos={productos}/>
     );
     }
 

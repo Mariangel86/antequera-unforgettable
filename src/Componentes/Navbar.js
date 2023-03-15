@@ -2,7 +2,7 @@ import React from "react";
 import LogoSoft from './assets/LogoSoft.png';
 import './Navbar.module.css';
 import CartWidget from './CartWidget';
-import styled from "styled-components";
+import InicioSesion from "./InicioSesion";
 import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
@@ -10,15 +10,13 @@ const NavBar = () => {
     return (
 
 <nav>
-   <img src= {LogoSoft} alt='Logo'/>
+   <NavLink to='/'><img src= {LogoSoft} alt='Logo'/></NavLink>
      <h1>Menu</h1> 
      <h3>Contact us</h3>
      
      <CartWidget />
 
-        <BotonInicio>
-            Inicia Sesion
-        </BotonInicio>
+     <InicioSesion/>
 
         <ul>
             <li>
@@ -36,7 +34,5 @@ const NavBar = () => {
     
     )
 }
-const BotonInicio = styled.button`
-margin-left:60rem`
 
 export default NavBar;
