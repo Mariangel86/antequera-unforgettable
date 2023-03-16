@@ -1,5 +1,4 @@
 import React, {useState,useEffect} from "react";
-import Item from "./Item.js";
 import ItemDetail from "./ItemDetail.js";
 
 const ItemDetalleContenedor= () => {

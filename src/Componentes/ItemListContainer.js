@@ -3,7 +3,6 @@ import Titulo from './Titulo';
 import './ItemListContainer.css'
 import ContadorFuncional from './Contador';
 import ItemList from './ItemList';
-import { useParams } from 'react-router-dom';
 
 const ItemListContainer = (props) => {
   const [productos, cambiarProductos ] = useState ([]);

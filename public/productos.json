@@ -1,6 +1,7 @@
 [
  {
     "id":"1",
+    "categoria": "sabanas",
     "name": "Pedro ",
     "LastName": "Roble",
     "email":"juanchoroble@gm,ail.com",
@@ -11,6 +12,7 @@
 
 {
     "id":"2",
+    "categoria": "sabanas",
     "name": "Ana ",
     "LastName": "Martinez",
     "email":"AnaM@gmail.com",
@@ -21,6 +23,7 @@
 
 {
     "id":"3",
+    "categoria": "sabanas",
     "name": "Mirian ",
     "LastName": "Medina",
     "email":"MirianMed@gmail.com",
@@ -30,6 +33,7 @@
 },
 
 {   "id":"4",
+    "categoria": "edredones",
     "name": "Francisco",
     "LastName": "Perez",
     "email": "Fperez@gmail.com",
@@ -38,6 +42,7 @@
     "image":"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
 },
 {   "id":"5",
+    "categoria": "edredones",
     "name": "Lupita",
     "LastName": "fuente",
     "email": "FLupe@gmail.com",
@@ -46,22 +51,25 @@
     "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjLbaR-s1oOO1RzKfoZZK3f9gXwrxMLT9vHg&usqp=CAU"
 },
 {   "id":"6",
-"name": "Carolina",
-"LastName": "Rodriguez",
-"email": "CarRodriguez@gmail.com",
-"celular":"3017654123",
-"price": "56",
-"image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl31zWzUqvvDyOPeX6y1Z_sSYlpIC-3t8uVw&usqp=CAU"
+    "categoria": "edredones",
+    "name": "Carolina",
+    "LastName": "Rodriguez",
+    "email": "CarRodriguez@gmail.com",
+    "celular":"3017654123",
+    "price": "56",
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl31zWzUqvvDyOPeX6y1Z_sSYlpIC-3t8uVw&usqp=CAU"
 },
 {   "id":"7",
-"name": "Rodrigo",
-"LastName": "Garcia",
-"email": "Garcia54@gmail.com",
-"celular":"3077654123",
-"price": "69",
-"image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzaMqZ-aQMaF4eYyJ7ajtJ0QG1jQf6RrXXQw&usqp=CAU"
+    "categoria": "peluches",
+    "name": "Rodrigo",
+    "LastName": "Garcia",
+    "email": "Garcia54@gmail.com",
+    "celular":"3077654123",
+    "price": "69",
+    "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzaMqZ-aQMaF4eYyJ7ajtJ0QG1jQf6RrXXQw&usqp=CAU"
 },
 {   "id":"8",
+    "categoria": "peluches",
     "name": "martha",
     "LastName": "tamayo",
     "email": "tamayomartha@gmail.com",
@@ -70,6 +78,7 @@
     "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRztNiEd63SvTXMXe-2Llo9Lcp1mWHtSUJhPg&usqp=CAU"
 },
 {   "id":"9",
+    "categoria": "peluches",
     "name": "Milena",
     "LastName": "osteicochea",
     "email": "Osteicocheml@gmail.com",
@@ -78,6 +87,7 @@
     "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBUZVjWpH9gUykSjPmxQehYXniQxn4qlhMvw&usqp=CAU"
 },
 {   "id":"10",
+    "categoria": "peluches",
     "name": "Josefina",
     "LastName": "Carvajal",
     "email": "JosefaCarvajal@gmail.com",

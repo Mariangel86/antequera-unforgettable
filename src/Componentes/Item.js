@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 const Item =({productoCategoria})=>{
     const {categoriaId}= useParams();
 
-    const producto= productoCategoria.find((producto)=>producto.id ==categoriaId)
+    const producto= productoCategoria.find((producto)=>producto.id ===categoriaId)
     
     return(
     <Link to={`/categoria/${producto.id}`}><ContenedorProductos>
