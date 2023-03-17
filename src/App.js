@@ -4,6 +4,7 @@ import ItemListContainer from './Componentes/ItemListContainer';
 import NavBar from './Componentes/Navbar';
 import ItemDetailContainer from './Componentes/ItemDetailContainer';
 
+
 const App=()=> {
    
        return (
@@ -14,8 +15,8 @@ const App=()=> {
       
       <Routes>
       <Route path='/' element= {<ItemListContainer text='Lista de productos'/>}/>
-      <Route path='/categoria/:categoria.id'></Route>
-      <Route path='Detalle/:detalle.id' element= {<ItemDetailContainer/>}/>
+      <Route path='/categoria/:id' element={<ItemListContainer/>}/>
+      <Route path='detalle/:id' element= {<ItemDetailContainer/>}/>
       <Route path='/iniciarSesion'></Route>
       </Routes>
       

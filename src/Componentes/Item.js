@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { useParams } from "react-router-dom";
 
-const Item =({productoCategoria})=>{
+const Item =({producto})=>{
     const {categoriaId}= useParams();
 
-    const producto= productoCategoria.find((producto)=>producto.id ===categoriaId)
+    //const productos= producto.find((productos)=>productos.id ==categoriaId)
     
     return(
-    <Link to={`/categoria/${producto.id}`}><ContenedorProductos>
+    <Link to={`/categoria/${producto.id}`}>
+        <ContenedorProductos>
         <Imagen src={producto.image} alt=""/>
         <p>{producto.name} {producto.LastName}</p>
         <p>{producto.price}</p>
