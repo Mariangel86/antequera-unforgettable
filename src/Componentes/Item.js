@@ -1,22 +1,21 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { useParams } from "react-router-dom";
+import {Link } from "react-router-dom";
 
 const Item =({producto})=>{
-    const {categoriaId}= useParams();
+    //const {categoriaId}= useParams();
 
-    //const productos= producto.find((productos)=>productos.id ==categoriaId)
+    //const productos= producto.find((producto)=>producto.id ==categoriaId);
     
     return(
-    <Link to={`/categoria/${producto.id}`}>
-        <ContenedorProductos>
+    <Link to={`/categoria/${producto.id}`}><ContenedorProductos>
         <Imagen src={producto.image} alt=""/>
         <p>{producto.name} {producto.LastName}</p>
         <p>{producto.price}</p>
-    </ContenedorProductos></Link>
+    </ContenedorProductos>
+    </Link>
     );
-}
+};
 
 const Imagen = styled.img`
     width:10%;
