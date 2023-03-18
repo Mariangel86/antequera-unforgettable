@@ -1,14 +1,12 @@
 import React from 'react'
-import styled from "styled-components";
 
 const InicioSesion = () => {
   return (
-        <BotonInicio>
-    Inicia Sesion
-</BotonInicio>
+    <div>
+        <h1>Has Iniciado Sesion</h1>
+        <p>Bienvenido</p>
+    </div>
   )
 }
-const BotonInicio = styled.button`
-margin-left:60rem`
 
 export default InicioSesion

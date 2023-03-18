@@ -2,8 +2,8 @@ import React from "react";
 import LogoSoft from './assets/LogoSoft.png';
 import './Navbar.module.css';
 import CartWidget from './CartWidget';
-import InicioSesion from "./InicioSesion";
 import { NavLink } from "react-router-dom";
+import styled from "styled-components";
 
 const NavBar = () => {
 
@@ -16,7 +16,11 @@ const NavBar = () => {
      
      <CartWidget />
 
-     <InicioSesion/>
+     <NavLink to="/IniciarSesion">
+        <BotonInicio>
+    Inicia Sesion
+</BotonInicio>
+</NavLink>
 
         <ul>
             <li>
@@ -34,5 +38,7 @@ const NavBar = () => {
     
     )
 }
+const BotonInicio = styled.button`
+margin-left:60rem`
 
 export default NavBar;

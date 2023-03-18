@@ -3,6 +3,7 @@ import './App.css';
 import ItemListContainer from './Componentes/ItemListContainer';
 import NavBar from './Componentes/Navbar';
 import ItemDetailContainer from './Componentes/ItemDetailContainer';
+import InicioSesion from './Componentes/InicioSesion';
 
 
 const App=()=> {
@@ -17,7 +18,7 @@ const App=()=> {
       <Route path='/' element= {<ItemListContainer text='Lista de productos'/>}/>
       <Route path='/categoria/:categoriaId' element={<ItemListContainer/>}/>
       <Route path='detalle/:detalleId' element= {<ItemDetailContainer/>}/>
-      <Route path='/iniciarSesion'></Route>
+      <Route path='/iniciarSesion' element={<InicioSesion/>}></Route>
       </Routes>
       
       
