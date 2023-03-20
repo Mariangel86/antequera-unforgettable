@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import ItemListContainer from './Componentes/ItemListContainer';
 import NavBar from './Componentes/Navbar';
 import ItemDetailContainer from './Componentes/ItemDetailContainer';
 import InicioSesion from './Componentes/InicioSesion';
+import ItemListContainer from './Componentes/ItemListContainer';
 
 
 const App=()=> {
@@ -15,9 +15,9 @@ const App=()=> {
 
       
       <Routes>
-      <Route path='/' element= {<ItemListContainer text='Lista de productos'/>}/>
-      <Route path='/categoria/:id' element={<ItemListContainer/>}/>
-      <Route path='/detalle/:id' element= {<ItemDetailContainer/>}/>
+        <Route path='/' element={<h4>Bienvenido a mi pagina</h4>}/>
+        <Route path='/categoria' element={<ItemListContainer/>}/>
+      <Route path='/categoria/:id' element= {<ItemDetailContainer/>}/>
       <Route path='/iniciarSesion' element={<InicioSesion/>}></Route>
       </Routes>
       
