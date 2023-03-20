@@ -3,9 +3,6 @@ import styled from "styled-components";
 import {Link } from "react-router-dom";
 
 const Item =({producto})=>{
-    //const {categoriaId}= useParams();
-
-    //const productos= producto.find((producto)=>producto.id ==categoriaId);
     
     return(
     <Link to={`${producto.id}`}>
