@@ -6,9 +6,10 @@ const ItemDetalleContenedor= () => {
 
     const establecerProductos = async()=> {
       try {
-      const results = await fetch ("./productos.json")
+      const results = await fetch ("../productos.json")
       const data= await results.json();
       cambiarProductos(data);
+      
     }catch (error) {console.log(error);
     }}
 
