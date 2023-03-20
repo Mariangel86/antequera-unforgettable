@@ -8,7 +8,8 @@ const Item =({producto})=>{
     //const productos= producto.find((producto)=>producto.id ==categoriaId);
     
     return(
-    <Link to={`/categoria/${producto.id}`}><ContenedorProductos>
+    <Link to={`/categoria/${producto.id}`}>
+        <ContenedorProductos>
         <Imagen src={producto.image} alt=""/>
         <p>{producto.name} {producto.LastName}</p>
         <p>{producto.price}</p>

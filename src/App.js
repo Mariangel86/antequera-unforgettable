@@ -16,8 +16,8 @@ const App=()=> {
       
       <Routes>
       <Route path='/' element= {<ItemListContainer text='Lista de productos'/>}/>
-      <Route path='/categoria/:categoriaId' element={<ItemListContainer/>}/>
-      <Route path='detalle/:detalleId' element= {<ItemDetailContainer/>}/>
+      <Route path='/categoria/:id' element={<ItemListContainer/>}/>
+      <Route path='/detalle/:id' element= {<ItemDetailContainer/>}/>
       <Route path='/iniciarSesion' element={<InicioSesion/>}></Route>
       </Routes>
       

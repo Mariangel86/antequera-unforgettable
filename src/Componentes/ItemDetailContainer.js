@@ -2,7 +2,7 @@ import React, {useState,useEffect} from "react";
 import ItemDetail from "./ItemDetail.js";
 
 const ItemDetalleContenedor= () => {
-    const [productos, cambiarProductos ] = useState ([]);
+    const [productos, cambiarProductos ] = useState ({});
 
     const establecerProductos = async()=> {
       try {
