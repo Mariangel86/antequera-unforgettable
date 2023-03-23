@@ -9,11 +9,11 @@ nav {
 }
 
 nav ul li{
-    position: relative;
     float: left;
+    position: relative;
     margin: 10px;
-    top: 90px;
-   justify-content: center;
+    top: 20px;
+    right:40em;
 }
 
 img {
@@ -25,7 +25,7 @@ img {
 h1{
     font-size: 2cm;
     position: absolute;
-    margin-left: 600px;
+    margin-left: 400px;
 }
 h3{
     font-size: 2cm;

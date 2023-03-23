@@ -1,26 +1,29 @@
-import React, {useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import ItemDetail from "./ItemDetail.js";
 
-const ItemDetalleContenedor= () => {
-    const [productos, cambiarProductos ] = useState ({});
+const ItemDetalleContenedor = () => {
+  const [productos, cambiarProductos] = useState({});
 
-    const establecerProductos = async()=> {
+  useEffect(() => {
+    const establecerProductos = async () => {
       try {
-      const results = await fetch ("../productos.json")
-      const data= await results.json();
-      cambiarProductos(data);
-      
-    }catch (error) {console.log(error);
-    }}
+        const results = await fetch("./productos.json")
+        const data = await results.json();
+        cambiarProductos(data);
 
-    
-    useEffect(()=>{
-      establecerProductos();
-    },[])
-
-    return(
-    <ItemDetail productos={productos}/>
-    );
+      } catch (error) {
+        console.log(error);
+      }
     }
+
+
+
+    establecerProductos();
+  }, [])
+
+  return (
+    <ItemDetail productos={productos} />
+  );
+}
 
 export default ItemDetalleContenedor;

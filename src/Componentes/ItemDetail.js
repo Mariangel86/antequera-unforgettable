@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 
 const ItemDetail = ({productos}) => {
     
-    const {id:detalleId}=useParams()|| {};
+    const {detalleId}=useParams();
     const producto= productos?.find?.((producto)=>producto.id === detalleId)
     console.log({productos, detalleId});
   return (
@@ -16,4 +16,4 @@ const ItemDetail = ({productos}) => {
   )
 }
 
-export default ItemDetail
+export default ItemDetail;

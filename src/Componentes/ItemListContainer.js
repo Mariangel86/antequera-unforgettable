@@ -1,34 +1,35 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import Titulo from './Titulo';
-import './ItemListContainer.css'
-import ContadorFuncional from './Contador';
 import ItemList from './ItemList';
+import { useParams } from 'react-router-dom';
 
 const ItemListContainer = (props) => {
-  const [productos, cambiarProductos ] = useState ([]);
+  const [productos, cambiarProductos] = useState([]);
+  const { id: categoriaId } = useParams()||{}
 
-  const establecerProductos = async()=> {
-    try {
-    const results = await fetch ("./productos.json")
-    const data= await results.json();
-    cambiarProductos(data);
-  }catch (error) {console.log(error);
-  }}
-  useEffect(()=>{
+  useEffect(() => {
+    const establecerProductos = async () => {
+      try {
+        const results = await fetch("./productos.json")
+        const data = await results.json();
+        if(categoriaId){
+          cambiarProductos(data?.filter?.((producto)=> producto.categoria === categoriaId))
+        } else {
+          cambiarProductos(data);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    }
     establecerProductos();
-  },[])
-    
-    const handleClick = () => {
-        alert("Click");
-      };
+  }, [categoriaId])
+
 
   return (
-  <div>
-    <Titulo greeting={props.text}/>
-      <ItemList productos={productos}/>
-      <ContadorFuncional cantidadAincrementar={1} cantidadAdisminuir= {1}/>
-      <button onClick={handleClick}>Click me</button>
-      </div>
+    <div>
+      <Titulo greeting={props.text} />
+      <ItemList productos={productos} />
+    </div>
   )
 }
 

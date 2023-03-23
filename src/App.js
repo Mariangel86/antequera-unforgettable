@@ -4,6 +4,7 @@ import NavBar from './Componentes/Navbar';
 import ItemDetailContainer from './Componentes/ItemDetailContainer';
 import InicioSesion from './Componentes/InicioSesion';
 import ItemListContainer from './Componentes/ItemListContainer';
+import ContadorFuncional from './Componentes/Contador';
 
 
 const App=()=> {
@@ -15,12 +16,12 @@ const App=()=> {
 
       
       <Routes>
-        <Route path='/' element={<h4>Bienvenido a mi pagina</h4>}/>
-        <Route path='/categoria' element={<ItemListContainer/>}/>
-      <Route path='/categoria/:id' element= {<ItemDetailContainer/>}/>
+        <Route path='/' element={<ItemListContainer/>}/>
+      <Route path='/categoria/:id' element= {<ItemListContainer/>}/>
+      <Route path='/:detalleId' element= {<ItemDetailContainer/>}/>
       <Route path='/iniciarSesion' element={<InicioSesion/>}></Route>
       </Routes>
-      
+      <ContadorFuncional cantidadAincrementar={1} cantidadAdisminuir={1} />
       
     </div>
     </BrowserRouter>
