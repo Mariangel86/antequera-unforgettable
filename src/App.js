@@ -5,6 +5,7 @@ import ItemDetailContainer from './Componentes/ItemDetailContainer';
 import InicioSesion from './Componentes/InicioSesion';
 import ItemListContainer from './Componentes/ItemListContainer';
 import ContadorFuncional from './Componentes/Contador';
+import Cart from './Componentes/Cart';
 
 
 const App=()=> {
@@ -20,6 +21,7 @@ const App=()=> {
       <Route path='/categoria/:id' element= {<ItemListContainer text1="Productos por Categoria"/>}/>
       <Route path='/:detalleId' element= {<ItemDetailContainer/>}/>
       <Route path='/iniciarSesion' element={<InicioSesion/>}></Route>
+      <Route path='/cart' element={<Cart/>}/>
       </Routes>
       <ContadorFuncional cantidadAincrementar={1} cantidadAdisminuir={1} />
       
