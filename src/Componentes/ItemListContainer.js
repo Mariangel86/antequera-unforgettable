@@ -10,15 +10,16 @@ const ItemListContainer = (props) => {
   useEffect(() => {
     const establecerProductos = async () => {
       try {
-        const results = await fetch("./productos.json")
+        const results = await fetch("../productos.json")
         const data = await results.json();
+        console.log({data});
         if(categoriaId){
           cambiarProductos(data?.filter?.((producto)=> producto.categoria === categoriaId))
         } else {
           cambiarProductos(data);
         }
       } catch (error) {
-        console.log(error);
+        console.log('Error', error);
       }
     }
     establecerProductos();
