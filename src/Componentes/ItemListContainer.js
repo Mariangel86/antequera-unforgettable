@@ -12,7 +12,6 @@ const ItemListContainer = (props) => {
       try {
         const results = await fetch("../productos.json")
         const data = await results.json();
-        console.log({data});
         if(categoriaId){
           cambiarProductos(data?.filter?.((producto)=> producto.categoria === categoriaId))
         } else {
@@ -28,7 +27,7 @@ const ItemListContainer = (props) => {
 
   return (
     <div>
-      <Titulo greeting={props.text} />
+      <Titulo greeting={props.text} greeting1={props.text1}/>
       <ItemList productos={productos} />
     </div>
   )
