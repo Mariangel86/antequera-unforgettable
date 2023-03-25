@@ -1,6 +1,6 @@
-import React from 'react'
-import { useParams } from 'react-router-dom';
-import ContadorFuncional from './Componentes/Contador';
+import React, { useState } from 'react'
+import { Link, useParams } from 'react-router-dom';
+import ContadorFuncional from './Contador';
 
 const ItemDetail = ({ productos }) => {
   const [irCarro, cambiarIrCarro] = useState(false)
