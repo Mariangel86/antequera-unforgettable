@@ -4,14 +4,15 @@ import NavBar from './Componentes/Navbar';
 import ItemDetailContainer from './Componentes/ItemDetailContainer';
 import InicioSesion from './Componentes/InicioSesion';
 import ItemListContainer from './Componentes/ItemListContainer';
-import ContadorFuncional from './Componentes/Contador';
 import Cart from './Componentes/Cart';
+import CartProvider from './Componentes/Contexts/CartContext';
 
 
 const App=()=> {
    
        return (
        <BrowserRouter>
+       <CartProvider>
     <div className="div">
       <NavBar/>
 
@@ -23,9 +24,9 @@ const App=()=> {
       <Route path='/iniciarSesion' element={<InicioSesion/>}></Route>
       <Route path='/cart' element={<Cart/>}/>
       </Routes>
-      <ContadorFuncional cantidadAincrementar={1} cantidadAdisminuir={1} />
       
     </div>
+    </CartProvider>
     </BrowserRouter>
   );
 }

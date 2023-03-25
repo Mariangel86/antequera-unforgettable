@@ -1,23 +1,29 @@
 import React, {useState} from 'react';
 
-const ContadorFuncional = (props) => {
-    const [cuenta, CambiarCuenta ] = useState (0);
+const ContadorFuncional = ({cantidadAincrementar, cantidadAdisminuir, stock, onAdd, initial}) => {
+    const [cuenta, CambiarCuenta ] = useState (parseInt(initial));
     const incrementar = (cantidad) =>CambiarCuenta(cuenta + cantidad);
     const disminuir = (cantidad) => CambiarCuenta(cuenta - cantidad);
+    useEffect(()=>{
+        CambiarCuenta (parseInt(initial))
+    },[initial])
 
 return (
 <div>
     <h2>Contador: {cuenta}</h2>
 
 <button
-onClick={() => incrementar (props.cantidadAincrementar)}>
+disabled={cuenta >= 10}
+onClick={() => incrementar (cantidadAincrementar)}>
 
         Incrementar
     </button>
 <button
-onClick={() => disminuir (props.cantidadAdisminuir)}>
+disabled={cuenta <= 1}
+onClick={() => disminuir (cantidadAdisminuir)}>
         Disminuir
     </button>
+    <button  disabled={stock<=0} onClick={() => onAdd(cuenta)}>Agregar al Carrito</button>
     </div>
 );
 }
