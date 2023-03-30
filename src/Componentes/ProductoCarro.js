@@ -5,9 +5,9 @@ const ProductoCarro = ( {producto} ) =>{
     const {RemoverProducto}= UseContextCarro();
     return (
         <div>
-            <img src={producto.image} alt={producto.title}/>
+            <img src={producto.image} alt={producto.name}/>
             <div>
-                <p> Titulo: {producto.title}</p>
+                <p> Titulo: {producto.name}</p>
                 <p>Cantidad: {producto.cuenta}</p>
                 <p>Precio u.: {producto.price}</p>
                 <p>Subtotal: ${producto.cuenta * producto.price}</p>

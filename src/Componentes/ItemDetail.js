@@ -1,22 +1,24 @@
 import React, { useState } from 'react'
-import { Link, useParams } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import ContadorFuncional from './Contador';
+import {UseContextCarro} from "./Contexts/CartContext";
 
 const ItemDetail = ({ productos }) => {
-  const [irCarro, cambiarIrCarro] = useState(false)
+  const [irCarro, cambiarIrCarro] = useState(false);
+  
+  const {AgregarProducto}= UseContextCarro();
+
   const onAdd = (cuenta) => {
     cambiarIrCarro(true);
+    AgregarProducto(productos, cuenta);
    }
 
-  const { detalleId } = useParams();
-  const producto = productos?.find?.((producto) => producto.id === detalleId)
-  console.log({ productos, detalleId });
+  //const { detalleId } = useParams();
+  //const producto = productos?.find?.((producto) => producto.id === detalleId)
+  //console.log({ productos, detalleId });
   return (
     <div>
-      <img src={producto?.image} alt="" />
-      <h1>{producto?.name}</h1>
-      <h2>{producto?.price}</h2>
-
+      <img src={productos.image} alt="" />
       <h1>{productos.name}</h1>
       {
         irCarro
