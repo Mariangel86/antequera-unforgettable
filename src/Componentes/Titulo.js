@@ -4,7 +4,7 @@ const Titulo = ({greeting, greeting1}) => {
   return (
     <div>
     <h1>{greeting}</h1>
-    <h1>{greeting1}</h1>
+    <h2>{greeting1}</h2>
     </div>
   )
 }
