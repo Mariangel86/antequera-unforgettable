@@ -20,6 +20,7 @@ const ItemDetail = ({ productos }) => {
     <div>
       <img src={productos.image} alt="" />
       <h1>{productos.name}</h1>
+      <h4>{productos.descripcion}</h4>
       {
         irCarro
           ? <Link to='/cart' > Finalizar Su Compra </Link>
