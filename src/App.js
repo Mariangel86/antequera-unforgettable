@@ -6,6 +6,7 @@ import InicioSesion from './Componentes/InicioSesion';
 import ItemListContainer from './Componentes/ItemListContainer';
 import Cart from './Componentes/Cart';
 import CartProvider from './Componentes/Contexts/CartContext';
+import ERROR404 from './Componentes/ERROR404';
 
 
 const App=()=> {
@@ -19,10 +20,11 @@ const App=()=> {
       
       <Routes>
         <Route path='/' element={<ItemListContainer text="Lista de Productos"/>}/>
-      <Route path='/categoria/:id' element= {<ItemListContainer text1="Productos por Categoria"/>}/>
-      <Route path='/:detalleId' element= {<ItemDetailContainer/>}/>
+      <Route path='/categoria/:categoriaId' element= {<ItemListContainer text1="Productos por Categoria"/>}/>
+      <Route path='/detalle/:detalleId' element= {<ItemDetailContainer/>}/>
       <Route path='/iniciarSesion' element={<InicioSesion/>}></Route>
       <Route path='/cart' element={<Cart/>}/>
+      <Route path= '*' element={<ERROR404/>}/>
       </Routes>
       
     </div>

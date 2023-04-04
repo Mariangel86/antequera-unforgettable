@@ -5,7 +5,7 @@ import {Link } from "react-router-dom";
 const Item =({producto})=>{
     
     return(
-    <Link to={`${producto.id}`}>
+    <Link to={`/detalle/${producto.id}`}>
         <ContenedorProductos>
         <Imagen src={producto.image} alt=""/>
         <p>{producto.name} {producto.LastName}</p>
